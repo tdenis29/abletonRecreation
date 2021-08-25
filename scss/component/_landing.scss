@@ -6,14 +6,17 @@
     flex-direction: column;
     width: 100%;
     margin: 3rem 0 auto;
-    position: relative;
+    
 .landing-hero-right{
  width: 100%;
+ position: relative;
+ margin-bottom: 3rem;
 .hero-image{
     width: 100%;
     margin: 0 auto;
     height: auto;
-    z-index: 2;
+    position:relative;
+    z-index: 10;
 }}}
 .landing-hero-left{
     margin: 0 auto;
@@ -24,13 +27,13 @@
     width: 100%;
 h1{
     text-align: center;
-    width: 75%;
+    width: 100%;
     margin: 0 auto;
-    padding: 1rem;
-    font-size: 2.4rem;
+    padding: .5rem;
+    font-size: 2rem;
 }}
 .landing-text-container{
-    width: 75%;
+    width: 100%;
     text-align: center;
     padding: 1rem;
     line-height: 1.5;
@@ -42,16 +45,30 @@ p{
     display: flex;
     justify-content: center;
     margin: 1rem auto;
-.landing-cta{
-    width: 35%;
-    background-color: lightgrey; 
+.landing-cta{ 
     border: none;
-    color: black;
-    padding: 1rem 1.5rem;
+    background-color: white;
+    padding: 1rem .5rem;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 1rem;
-    margin: 0 1rem;
+    margin: 0 .5rem;
     border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 5px 5px 15px 5px lightgray;
 }}
+.landing-cta:hover{
+    background-color: $softblue;
+    color: white;
+}
+.shape-div{
+    height: 10.938rem;
+    width: 15.625rem;
+    background-color: $softblue;
+    position: absolute;
+    bottom: 0%;
+    right: 20%;
+    z-index: 1;
+    overflow: hidden;
+    border-bottom-left-radius: 50%;
+}
