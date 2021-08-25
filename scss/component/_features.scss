@@ -1,9 +1,8 @@
-.features-section{
-    margin-bottom: 5rem;
-}
+
 .features-title{
     text-align: center;
     margin: 1.5rem 0; 
+    font-size: 1.5rem;
 }
 .features-text-container{
     width: 100%;
@@ -22,7 +21,7 @@ p{
     background-color: white;
     padding: 1rem;
     border-top: solid 1px lightgrey;
-   
+  
 }
 .tablinks:last-child{
     border-bottom: solid 1px lightgray;
@@ -35,7 +34,7 @@ p{
     width: 100%;
     height: auto;
     position:relative;
-    margin-bottom:3rem;
+    margin-bottom: 3rem;
 }
 .tab-img{
     width:100%;
@@ -54,4 +53,11 @@ p{
     overflow: hidden;
     border-bottom-right-radius: 50%;
 
+}
+.tab-content h3{
+    font-size: 1.5rem;
+}
+.tab-content h3, .tab-content p{
+    text-align: center;
+    padding: 1rem 0;
 }
