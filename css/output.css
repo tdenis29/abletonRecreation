@@ -1,5 +1,98 @@
-h1 {
-  color: red;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+  font-size: 18px;
+}
+
+header {
+  display: flex;
+  padding-top: 1.5rem;
+  padding-left: 0.5rem;
+  width: 100%;
+  align-items: center;
+}
+header .logo-container {
+  width: 90%;
+}
+header .logo-container .menu-container {
+  width: 10%;
+  justify-self: end;
+}
+
+.landing-section {
+  margin-bottom: 5rem;
+}
+
+.landing-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 3rem 0 auto;
+  position: relative;
+}
+.landing-container .landing-hero-right {
+  width: 100%;
+}
+.landing-container .landing-hero-right .hero-image {
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+  z-index: 2;
+}
+
+.landing-hero-left {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.landing-hero-left h1 {
+  text-align: center;
+  width: 75%;
+  margin: 0 auto;
+  padding: 1rem;
+  font-size: 2.4rem;
+}
+
+.landing-text-container {
+  width: 75%;
+  text-align: center;
+  padding: 1rem;
+  line-height: 1.5;
+}
+.landing-text-container p {
+  font-size: 1.2rem;
+}
+
+.landing-button-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 1rem auto;
+}
+.landing-button-container .landing-cta {
+  width: 35%;
+  background-color: lightgrey;
+  border: none;
+  color: black;
+  padding: 1rem 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  margin: 0 1rem;
+  border-radius: 5px;
 }
 
 /*# sourceMappingURL=output.css.map */

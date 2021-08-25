@@ -1,3 +1,12 @@
-h1{
-    color: red;
-}
+header{
+    display: flex;
+    padding-top: 1.5rem;
+    padding-left: .5rem;
+    width: 100%;
+    align-items: center;
+.logo-container{
+    width: 90%;
+.menu-container{
+    width: 10%;
+    justify-self: end;
+}}}

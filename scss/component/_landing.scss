@@ -1,0 +1,57 @@
+.landing-section{
+    margin-bottom: 5rem;
+}
+.landing-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 3rem 0 auto;
+    position: relative;
+.landing-hero-right{
+ width: 100%;
+.hero-image{
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    z-index: 2;
+}}}
+.landing-hero-left{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+h1{
+    text-align: center;
+    width: 75%;
+    margin: 0 auto;
+    padding: 1rem;
+    font-size: 2.4rem;
+}}
+.landing-text-container{
+    width: 75%;
+    text-align: center;
+    padding: 1rem;
+    line-height: 1.5;
+p{
+    font-size: 1.2rem;
+}}
+.landing-button-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 1rem auto;
+.landing-cta{
+    width: 35%;
+    background-color: lightgrey; 
+    border: none;
+    color: black;
+    padding: 1rem 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 0 1rem;
+    border-radius: 5px;
+}}
