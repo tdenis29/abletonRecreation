@@ -1,0 +1,58 @@
+.cta-section{
+    background-color: $softblue;
+    background-size: cover;
+    position: relative;
+    margin: 0 0 1.7rem 0;;
+}
+.cta-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+.cta-title-container{
+    padding: 1rem;
+}
+.form-container{
+    width: 100%;
+}
+.cta-title-container h6,.cta-title-container p{
+    text-align: center;
+    padding-bottom: .5rem;
+    color: white;
+}
+.cta-title-container h6{
+    font-size: 1.5rem;
+}
+
+div.form-container > form > input[type=email]:nth-child(1){
+    display: block;
+    padding: .5rem;
+    margin: 2rem 0;
+    width: 100%;
+}
+
+div.form-container > form > input[type=submit]:nth-child(2){
+    width: 100%;
+    border: none;
+    background-color:$softred;
+    color: white;
+    padding: 1rem 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 1rem;
+  
+}
+.background-div-footer{
+    height: 120%;
+    width: 150%;
+    position:absolute;
+    overflow: hidden;
+    z-index: -1;
+    background-color: $darkblue;
+}

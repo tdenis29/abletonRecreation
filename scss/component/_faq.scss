@@ -1,0 +1,41 @@
+.faq-title h6{
+    font-size: 1.5rem;
+    padding: 0 1rem 1rem 1rem;
+    text-align: center;
+}
+    .faq-text p{
+    text-align: center;
+    padding: 0 0 1rem 0;
+}
+
+.accordian-container{
+    padding: 1rem 1rem;
+    border-bottom: solid 1px lightgray;
+}
+
+.accordian-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.faq-button-container{
+    margin: 2.5rem auto;
+    display: flex;
+    justify-content: center;
+    
+}
+.faq-button-container button{
+    border: none;
+    background-color:$softblue;
+    color: white;
+    padding: 1rem 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 .5rem;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 5px 5px 15px 5px lightgray;
+}

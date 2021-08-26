@@ -15,16 +15,30 @@ p{
 .tab{
     display: flex;
     flex-direction: column;
+    margin-bottom: 5rem;
 }
 .tablinks{
     border: none;
     background-color: white;
     padding: 1rem;
-    border-top: solid 1px lightgrey;
-  
+    cursor: pointer;
+    font-size: 1.125rem;
+    position: relative;
+}
+.tablinks:active::after {
+    content : "";
+    position: absolute;
+    left    : 25%;
+    bottom  : 0;
+    height  : 1px;
+    width   : 50%;  /* or 100px */
+    border-bottom:4px solid $softred;
+  }
+hr{
+    color: lightgray;
 }
 .tablinks:last-child{
-    border-bottom: solid 1px lightgray;
+    
     margin-bottom: 2rem;
 }
 .tab-content-container{
