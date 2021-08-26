@@ -21,11 +21,46 @@ header{
     border: none;
     
 }
-.logo-container svg .modalactive{
-    fill: #fff;
-}
 body > header > div.menu-container{
     position: relative;
     z-index: 11;
-   
+}
+.modalactive{
+    fill: #fff;
+}
+//modal menu
+.menu-nav-container{
+    position:absolute;
+    top: 20%;
+    width: 100%;
+    text-align: center;
+}
+.menu-nav li {
+    color: #fff;
+    padding: 1rem 0;
+    width: 100%;
+    text-transform: uppercase;
+}
+nav > ul > hr {
+    width: 80%;
+    color: lightgray;
+    margin: 0 auto;
+    opacity: .2;
+}
+.menulogin{
+    position: absolute;
+    bottom: 35%;
+    font-size: 1.125rem;
+    width: 80%;
+    left: 10%;
+    color: white;
+    border: solid 3px white;
+    background: none;
+    padding: .75rem 1.5rem;
+    text-transform: uppercase;;
+}
+.menu.social-icons{
+position: absolute;
+bottom: 20%;
+left: 35%;
 }
