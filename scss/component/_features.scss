@@ -44,6 +44,8 @@ hr{
 }
 .tab-content-container{
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 .tab-img-container {
     width: 100%;

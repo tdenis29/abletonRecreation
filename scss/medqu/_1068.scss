@@ -1,0 +1,57 @@
+@media (min-width: 1068px) {
+    //header
+
+
+    //landing
+    .landing-container{
+        flex-direction: row;
+    }
+    .landing-title-container h1{
+        font-size: 3.5rem;
+        text-align: left;
+    }
+    .landing-text-container p{
+        text-align: left;
+    }
+    .landing-hero-right{
+        order: 2;
+    }
+    .landing-button-container{
+        justify-content:flex-start;
+    }
+    .shape-div{
+        height: 20rem;
+        width: 40rem;
+    }
+    //features
+    .features-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .features-text-container p{
+        width: 40%;
+        margin: 1rem auto;
+        
+    }
+    .tab{
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .tab hr{
+        display: none;
+    }
+    .tablinks{
+        border-bottom: solid 2px lightgray;
+        padding: 2rem 2.5rem;
+    }
+    .tabcontent{
+        display: flex;
+        flex-direction: row;
+    }
+    .tab-img{
+        width: auto;
+    }
+}
