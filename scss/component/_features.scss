@@ -24,6 +24,7 @@ p{
     cursor: pointer;
     font-size: 1.125rem;
     position: relative;
+    color: $darkblue;
 }
 .tablinks:active::after {
     content : "";
@@ -58,7 +59,7 @@ hr{
 }
 .features-shape-div{
     height: 10.938rem;
-    width: 17.625rem;
+    width: 19.625rem;
     background-color: $softblue;
     position: absolute;
     bottom: -10%;

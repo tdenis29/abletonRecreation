@@ -5,7 +5,8 @@
 }
     .faq-text p{
     text-align: center;
-    padding: 0 0 1rem 0;
+    padding: 1rem 0;
+    font-size: 1rem;
 }
 
 .accordian-container{
@@ -18,6 +19,7 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1rem;
+    color: $darkblue;
 }
 
 .faq-button-container{

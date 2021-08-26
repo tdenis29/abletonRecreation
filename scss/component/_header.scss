@@ -1,12 +1,31 @@
 header{
     display: flex;
-    padding-top: 1.5rem;
+    padding-top: 3rem;
     padding-left: .5rem;
     width: 100%;
     align-items: center;
+ 
 .logo-container{
     width: 90%;
+    position: relative;
+    z-index: 11;
 .menu-container{
     width: 10%;
     justify-self: end;
+    z-index: 11;
+    font-size: 1.75rem;
+    color: white;
 }}}
+.menu-container button{
+    background: none;
+    border: none;
+    
+}
+.logo-container svg .modalactive{
+    fill: #fff;
+}
+body > header > div.menu-container{
+    position: relative;
+    z-index: 11;
+   
+}
