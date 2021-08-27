@@ -1,6 +1,41 @@
 @media (min-width: 1068px) {
     //header
-
+    .hamburger{
+        display: none;
+    }
+    .logo-container{
+        width: 66%!important;
+    }
+    .desktop-nav-container{
+        width: 33%;
+        display: block;
+    }
+    .desktop-menu-nav{
+        display: flex;
+        flex-direction: row;
+        color: black;
+        align-items: center;
+    }
+    .desktop-menu-nav li {
+        padding: 0 1rem 0 1rem;
+        color: $darkblue;
+    }
+    .desktop-menu-nav li:hover{
+        color: $softred;
+    }
+    .desktopmenulogin{
+        width: 100%;
+        color: white!important;
+        border: solid 3px $softred;
+        background: $softred;
+        text-transform: uppercase;
+        padding: .5rem 1rem!important;
+        border-radius: 5px;;
+    }
+    .desktopmenulogin:hover{
+        background-color: white;
+        color: $softred!important;
+    }
 
     //landing
     .landing-container{
@@ -49,7 +84,7 @@
     .tablinks{
         margin-right: 4rem;
     }
-    .tabcontent{
+    #bookMark{
         display: flex;
         flex-direction: row;
     }
@@ -67,15 +102,18 @@
         border-bottom-right-radius: 15%;
         padding-bottom: 2rem;
     }
-    .tab-content{
+    .tabcontent{
         display: flex;
         flex-direction: column;
         justify-content: center;
         margin-left: 5rem;
         
     }
-    .tab-content p, .tab-content h3{
+    .tabcontent p, .tabcontent h3{
         text-align: left;
+    }
+    .tabimgcontainer{
+        width: 50%;
     }
     //downloads
     .downloads-text p{
@@ -145,6 +183,7 @@
     div.footer-title{
         width: 66%;
         display: flex;
+        flex-direction: row;
         align-items: center;
     }
     .bottom-nav-container{

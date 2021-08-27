@@ -180,6 +180,10 @@ nav > ul > hr {
   left: 35%;
 }
 
+.desktop-nav-container {
+  display: none;
+}
+
 .landing-section {
   margin-bottom: 5rem;
 }
@@ -235,9 +239,10 @@ nav > ul > hr {
   justify-content: center;
   margin: 1rem auto;
 }
-.landing-button-container .landing-cta {
+.landing-button-container .landing-cta-left {
   border: none;
-  background-color: white;
+  cursor: pointer;
+  background-color: #5368df;
   padding: 1rem 0.5rem;
   text-align: center;
   text-decoration: none;
@@ -246,12 +251,34 @@ nav > ul > hr {
   border-radius: 5px;
   font-size: 16px;
   box-shadow: 5px 5px 15px 5px lightgray;
-  color: #252b46;
+  color: white;
 }
 
-.landing-cta:hover {
-  background-color: #5368df;
-  color: white;
+.landing-cta-right {
+  border: none;
+  cursor: pointer;
+  background-color: white;
+  border: solid 3px white;
+  padding: 1rem 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 0.5rem;
+  border-radius: 5px;
+  font-size: 16px;
+  box-shadow: 5px 5px 15px 5px lightgray;
+  color: #9194a1;
+}
+
+.landing-cta-left:hover {
+  background-color: white;
+  border: solid 3px #5368df;
+  color: #5368df;
+}
+
+.landing-cta-right:hover {
+  color: #252b46;
+  border: solid 3px #252b46;
 }
 
 .shape-div {
@@ -260,7 +287,6 @@ nav > ul > hr {
   background-color: #5368df;
   position: absolute;
   bottom: 0%;
-  right: 30%;
   z-index: 1;
   overflow: hidden;
   border-bottom-left-radius: 50%;
@@ -297,17 +323,6 @@ nav > ul > hr {
   color: #252b46;
 }
 
-.tablinks:active::after {
-  content: "";
-  position: absolute;
-  left: 25%;
-  bottom: 0;
-  height: 1px;
-  width: 50%;
-  /* or 100px */
-  border-bottom: 4px solid #fa5757;
-}
-
 hr {
   color: lightgray;
 }
@@ -322,7 +337,7 @@ hr {
   flex-direction: column;
 }
 
-.tab-img-container {
+.tabimgcontainer {
   width: 100%;
   height: auto;
   position: relative;
@@ -348,11 +363,23 @@ hr {
   border-bottom-right-radius: 50%;
 }
 
-.tab-content h3 {
+.tabcontent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: none !important;
+}
+
+.tabimg {
+  display: none;
+}
+
+.tabcontent h3 {
   font-size: 1.6rem;
 }
 
-.tab-content h3, .tab-content p {
+.tab-ontent h3, .tabcontent p {
   text-align: center;
   padding: 1rem 0;
 }
@@ -370,6 +397,21 @@ hr {
   box-shadow: 5px 5px 15px 5px lightgray;
   color: white;
   width: 35%;
+}
+
+.tab-content.activate {
+  display: block !important;
+}
+
+.tablinks.activated::after {
+  content: "";
+  position: absolute;
+  left: 25%;
+  bottom: 0;
+  height: 1px;
+  width: 50%;
+  /* or 100px */
+  border-bottom: 4px solid #fa5757;
 }
 
 .downloads-title h4 {
@@ -555,6 +597,12 @@ footer {
   position: relative;
 }
 
+.footer-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .social-icons {
   display: flex;
   align-items: center;
@@ -584,6 +632,50 @@ footer {
 }
 
 @media (min-width: 1068px) {
+  .hamburger {
+    display: none;
+  }
+
+  .logo-container {
+    width: 66% !important;
+  }
+
+  .desktop-nav-container {
+    width: 33%;
+    display: block;
+  }
+
+  .desktop-menu-nav {
+    display: flex;
+    flex-direction: row;
+    color: black;
+    align-items: center;
+  }
+
+  .desktop-menu-nav li {
+    padding: 0 1rem 0 1rem;
+    color: #252b46;
+  }
+
+  .desktop-menu-nav li:hover {
+    color: #fa5757;
+  }
+
+  .desktopmenulogin {
+    width: 100%;
+    color: white !important;
+    border: solid 3px #fa5757;
+    background: #fa5757;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem !important;
+    border-radius: 5px;
+  }
+
+  .desktopmenulogin:hover {
+    background-color: white;
+    color: #fa5757 !important;
+  }
+
   .landing-container {
     flex-direction: row;
   }
@@ -639,7 +731,7 @@ footer {
     margin-right: 4rem;
   }
 
-  .tabcontent {
+  #bookMark {
     display: flex;
     flex-direction: row;
   }
@@ -661,15 +753,19 @@ footer {
     padding-bottom: 2rem;
   }
 
-  .tab-content {
+  .tabcontent {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-left: 5rem;
   }
 
-  .tab-content p, .tab-content h3 {
+  .tabcontent p, .tabcontent h3 {
     text-align: left;
+  }
+
+  .tabimgcontainer {
+    width: 50%;
   }
 
   .downloads-text p {
@@ -744,6 +840,7 @@ footer {
   div.footer-title {
     width: 66%;
     display: flex;
+    flex-direction: row;
     align-items: center;
   }
 
