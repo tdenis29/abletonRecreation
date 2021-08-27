@@ -72,9 +72,23 @@ hr{
 
 }
 .tab-content h3{
-    font-size: 1.5rem;
+    font-size: 1.6rem;
 }
 .tab-content h3, .tab-content p{
     text-align: center;
     padding: 1rem 0;
+}
+.tab-button{
+    border: none;
+    background-color: $softblue;
+    padding: 1rem .5rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 1rem 0;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 5px 5px 15px 5px lightgray;
+    color: white;;
+    width: 35%;
 }

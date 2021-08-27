@@ -18,8 +18,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     color: $darkblue;
+}
+.accordian-title:hover{
+    color: $softred;
 }
 
 .faq-button-container{

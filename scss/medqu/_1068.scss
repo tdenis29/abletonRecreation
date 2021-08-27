@@ -39,19 +39,131 @@
         align-items: center;
         flex-direction: row;
         justify-content: center;
+        width: 75%;
+        border-bottom: solid 2px lightgray;
+        margin: 2rem auto 5rem auto;
     }
     .tab hr{
         display: none;
     }
     .tablinks{
-        border-bottom: solid 2px lightgray;
-        padding: 2rem 2.5rem;
+        margin-right: 4rem;
     }
     .tabcontent{
         display: flex;
         flex-direction: row;
     }
+    .tab-img-container{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
     .tab-img{
         width: auto;
+    }
+    .features-shape-div{
+        height: 18.233rem;
+        width: 55.625rem;
+        border-bottom-right-radius: 15%;
+        padding-bottom: 2rem;
+    }
+    .tab-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 5rem;
+        
+    }
+    .tab-content p, .tab-content h3{
+        text-align: left;
+    }
+    //downloads
+    .downloads-text p{
+        width: 55%;
+        margin: 0 auto;
+    }
+    .downloads-card-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .downloads-card{
+        width: 30%;
+        margin: 0 1rem;
+    }
+    .downloads-card-container > div:nth-child(1){
+        margin-bottom: 8rem;
+    }
+    div.downloads-card-container > div:nth-child(2){
+        margin-bottom: 4rem;
+    }
+    //faq
+    .faq-text{
+        width: 50%;
+        margin: 0 auto 3rem auto;
+    }
+    .accordian-container{
+        width: 50%;
+        margin: 0 auto;
+    }
+    //cta section
+    form{
+        display: flex;
+        width: 50%;
+        margin: 0 auto 3rem auto;
+        align-items: center;
+
+    }
+    div.form-container > form > input[type=email]:nth-child(1){
+        display: inline-block;
+        width: 50%;
+        padding: 1rem .5rem;
+        margin: 0 1rem;
+        border-radius: 5px;
+        border: none;
+    }
+    body > main > section.cta-section > div > div.form-container > form > input[type=submit]:nth-child(2){
+    border: none;
+    background-color: $softred;
+    padding: 1rem .5rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 1rem 0;
+    border-radius: 5px;
+    font-size: 16px;
+   
+    color: white;;
+    width: 35%;
+    }
+    //footer
+    footer{
+        flex-direction: row;
+        width: 100%;
+       
+    }
+    div.footer-title{
+        width: 66%;
+        display: flex;
+        align-items: center;
+    }
+    .bottom-nav-container{
+        width: 33%;
+    }
+    
+    .bottom-nav {
+        display: flex;
+        margin-left: 2rem;
+        
+    }
+    .bottom-nav li{
+        padding-left: 2rem;
+        text-transform: uppercase;
+        color: $greyblue;
+        font-size: 1rem;
+    }
+    footer .social-icons{
+        width: 33%;
+        justify-content: flex-end;;
     }
 }

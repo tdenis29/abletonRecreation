@@ -10,6 +10,7 @@ body{
     margin: 0 auto;
     padding: 0 2rem;
     font-size: 18px;
+    max-width: 1200px;
 }
 .full-width {
     width: 100vw;
@@ -74,4 +75,9 @@ section{
         }
 .hidden{
     display: none;
+}
+
+details{
+    margin-top: 1rem;
+    color: $greyblue;
 }
