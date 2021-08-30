@@ -1,5 +1,6 @@
 @media (min-width: 1068px) {
     //header
+    
     .hamburger{
         display: none;
     }
@@ -57,6 +58,8 @@
     .shape-div{
         height: 20rem;
         width: 40rem;
+        right: 10%;
+        bottom: -5%;
     }
     //features
     .features-container{
@@ -66,7 +69,7 @@
         align-items: center;
     }
     .features-text-container p{
-        width: 40%;
+        width: 50%;
         margin: 1rem auto;
         
     }

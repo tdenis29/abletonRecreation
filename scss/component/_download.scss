@@ -38,7 +38,7 @@
     padding: 1rem 0;
 }
 .card-button-container button{
-    border: none;
+    border: solid transparent 2px;
     background-color: $softblue;
     color: white;
     padding: 1rem 1rem;
@@ -49,4 +49,9 @@
     border-radius: 5px;
     font-size: 16px;
     box-shadow: 5px 5px 15px 5px lightgray;
+}
+.card-button-container button:hover{
+    background-color: white;
+    color: $softblue;
+    border: solid 2px $softblue;
 }

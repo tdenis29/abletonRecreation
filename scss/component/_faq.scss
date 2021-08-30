@@ -10,8 +10,11 @@
 }
 
 .accordian-container{
-    padding: 1rem 1rem;
+  
     border-bottom: solid 1px lightgray;
+}
+#text{
+    padding: 2rem 0!important;
 }
 
 .accordian-title{
@@ -32,7 +35,7 @@
     
 }
 .faq-button-container button{
-    border: none;
+    border:solid 2px transparent;
     background-color:$softblue;
     color: white;
     padding: 1rem 1.5rem;
@@ -43,6 +46,11 @@
     border-radius: 5px;
     font-size: 16px;
     box-shadow: 5px 5px 15px 5px lightgray;
+}
+.faq-button-container button:hover{
+    background-color: white;
+    color: $softblue;
+    border: solid 2px $softblue;
 }
 svg.flippy{
     transform: rotate(180deg);

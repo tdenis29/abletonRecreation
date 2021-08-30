@@ -37,9 +37,9 @@ div.form-container > form > input[type=email]:nth-child(1){
     width: 100%;
 }
 
-div.form-container > form > input[type=submit]:nth-child(2){
+.submit{
     width: 100%;
-    border: none;
+    border: solid 2px transparent;
     background-color:$softred;
     color: white;
     padding: 1rem 1.5rem;
@@ -50,6 +50,11 @@ div.form-container > form > input[type=submit]:nth-child(2){
     font-size: 16px;
     margin-bottom: 1rem;
   
+}
+.submit:hover{
+    background-color: white!important;
+    color: $softred!important;
+    border: solid 2px $softred!important;
 }
 .background-div-footer{
     height: 120%;

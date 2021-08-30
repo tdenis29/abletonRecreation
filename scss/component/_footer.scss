@@ -34,3 +34,7 @@ footer{
     padding: 1rem 0;
     color: white;
 }
+.bottom-nav li:hover{
+    color: $softred;
+    cursor:pointer;
+}

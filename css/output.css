@@ -11,7 +11,8 @@ body {
   margin: 0 auto;
   padding: 0 2rem;
   font-size: 18px;
-  max-width: 1200px;
+  max-width: 100%;
+  overflow-x: hidden !important;
 }
 
 .full-width {
@@ -86,6 +87,7 @@ section {
 
 details {
   margin-top: 1rem;
+  margin-bottom: 1rem;
   color: #9194a1;
 }
 
@@ -269,6 +271,7 @@ nav > ul > hr {
   margin: 1rem auto;
 }
 .landing-button-container .landing-cta-left {
+  width: 35%;
   border: none;
   cursor: pointer;
   background-color: #5368df;
@@ -284,6 +287,7 @@ nav > ul > hr {
 }
 
 .landing-cta-right {
+  width: 35%;
   border: none;
   cursor: pointer;
   background-color: white;
@@ -317,14 +321,13 @@ nav > ul > hr {
   position: absolute;
   bottom: 0%;
   z-index: 1;
-  overflow: hidden;
-  border-bottom-left-radius: 50%;
+  overflow-x: hidden !important;
+  border-bottom-left-radius: 40%;
 }
 
 .features-title {
   text-align: center;
   margin: 1.5rem 0;
-  font-size: 1.5rem;
 }
 
 .features-text-container {
@@ -349,18 +352,7 @@ nav > ul > hr {
   cursor: pointer;
   font-size: 1.125rem;
   position: relative;
-  color: #252b46;
-}
-
-.tablinks.activated::after {
-  content: "";
-  position: absolute;
-  left: 25%;
-  bottom: 0;
-  height: 1px;
-  width: 50%;
-  /* or 100px */
-  border-bottom: 4px solid #fa5757;
+  color: #9194a1;
 }
 
 hr {
@@ -426,7 +418,7 @@ hr {
 }
 
 .tab-button {
-  border: none;
+  border: solid 2px transparent;
   background-color: #5368df;
   padding: 1rem 0.5rem;
   text-align: center;
@@ -440,13 +432,28 @@ hr {
   width: 35%;
 }
 
+.tab-button:hover {
+  background-color: white;
+  color: #5368df;
+  border: solid 2px #5368df;
+  cursor: pointer;
+}
+
+.tablinks:hover {
+  color: #fa5757;
+}
+
+.tablinks.activated {
+  color: #252b46;
+}
+
 .tablinks.activated::after {
   content: "";
   position: absolute;
-  left: 25%;
+  left: 0;
   bottom: 0;
   height: 1px;
-  width: 50%;
+  width: 100%;
   /* or 100px */
   border-bottom: 4px solid #fa5757;
 }
@@ -497,7 +504,7 @@ hr {
 }
 
 .card-button-container button {
-  border: none;
+  border: solid transparent 2px;
   background-color: #5368df;
   color: white;
   padding: 1rem 1rem;
@@ -508,6 +515,12 @@ hr {
   border-radius: 5px;
   font-size: 16px;
   box-shadow: 5px 5px 15px 5px lightgray;
+}
+
+.card-button-container button:hover {
+  background-color: white;
+  color: #5368df;
+  border: solid 2px #5368df;
 }
 
 .faq-title h6 {
@@ -523,8 +536,11 @@ hr {
 }
 
 .accordian-container {
-  padding: 1rem 1rem;
   border-bottom: solid 1px lightgray;
+}
+
+#text {
+  padding: 2rem 0 !important;
 }
 
 .accordian-title {
@@ -546,7 +562,7 @@ hr {
 }
 
 .faq-button-container button {
-  border: none;
+  border: solid 2px transparent;
   background-color: #5368df;
   color: white;
   padding: 1rem 1.5rem;
@@ -557,6 +573,12 @@ hr {
   border-radius: 5px;
   font-size: 16px;
   box-shadow: 5px 5px 15px 5px lightgray;
+}
+
+.faq-button-container button:hover {
+  background-color: white;
+  color: #5368df;
+  border: solid 2px #5368df;
 }
 
 svg.flippy {
@@ -610,9 +632,9 @@ div.form-container > form > input[type=email]:nth-child(1) {
   width: 100%;
 }
 
-div.form-container > form > input[type=submit]:nth-child(2) {
+.submit {
   width: 100%;
-  border: none;
+  border: solid 2px transparent;
   background-color: #fa5757;
   color: white;
   padding: 1rem 1.5rem;
@@ -622,6 +644,12 @@ div.form-container > form > input[type=submit]:nth-child(2) {
   border-radius: 5px;
   font-size: 16px;
   margin-bottom: 1rem;
+}
+
+.submit:hover {
+  background-color: white !important;
+  color: #fa5757 !important;
+  border: solid 2px #fa5757 !important;
 }
 
 .background-div-footer {
@@ -674,6 +702,11 @@ footer {
 .bottom-nav li {
   padding: 1rem 0;
   color: white;
+}
+
+.bottom-nav li:hover {
+  color: #fa5757;
+  cursor: pointer;
 }
 
 @media (min-width: 1068px) {
@@ -745,6 +778,8 @@ footer {
   .shape-div {
     height: 20rem;
     width: 40rem;
+    right: 10%;
+    bottom: -5%;
   }
 
   .features-container {
@@ -755,7 +790,7 @@ footer {
   }
 
   .features-text-container p {
-    width: 40%;
+    width: 50%;
     margin: 1rem auto;
   }
 
