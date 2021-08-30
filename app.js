@@ -5,14 +5,18 @@ let modalclosed = true;
 hamburger.addEventListener('click', (e) => {
     let overlay = document.getElementById('overlay');
     let logosvg = document.getElementById('logosvg');
-    let menusvg = document.getElementById('menusvg');
     logosvg.classList.toggle('modalactive');
     overlay.classList.toggle('hidden');
     modalclosed = !modalclosed;
     if(modalclosed === false){
-        menusvg.classList.add('modalactive');
+        hamburger.classList.add("is-active");
+        hamburger.classList.add("modalactive");
+        
+
     } else{
-        menusvg.classList.remove('modalactive');
+        hamburger.classList.remove('is-active');
+        hamburger.classList.remove("modalactive");
+    
     }
 });
 //tabs
@@ -57,3 +61,4 @@ summaryArr.forEach(summary => {
 
   })
 });
+//turn hamburger into x 

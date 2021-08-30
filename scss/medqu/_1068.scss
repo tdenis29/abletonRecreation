@@ -84,8 +84,7 @@
     .tablinks{
         margin-right: 4rem;
     }
-    #bookMark{
-        display: flex;
+    .tabcontainer{
         flex-direction: row;
     }
     .tab-img-container{
@@ -95,13 +94,16 @@
     }
     .tabimg{
         width: 100%;
+        position: relative;
     }
     .features-shape-div{
         height: 17.233rem;
-        width: 26.625rem;
+        width: 30.625rem;
+        position:absolute;
         border-bottom-right-radius: 50%; 
         padding-bottom: 2rem;
         overflow-x: hidden;
+        left: 100%;
     }
     .tabcontent{
         display: flex;
