@@ -26,20 +26,19 @@ p{
     position: relative;
     color: $darkblue;
 }
-// .tablinks:active::after {
-//     content : "";
-//     position: absolute;
-//     left    : 25%;
-//     bottom  : 0;
-//     height  : 1px;
-//     width   : 50%;  /* or 100px */
-//     border-bottom:4px solid $softred;
-//   }
+.tablinks.activated::after {
+    content : "";
+    position: absolute;
+    left    : 25%;
+    bottom  : 0;
+    height  : 1px;
+    width   : 50%;  /* or 100px */
+    border-bottom:4px solid $softred;
+  }
 hr{
     color: lightgray;
 }
 .tablinks:last-child{
-    
     margin-bottom: 2rem;
 }
 .tab-content-container{
@@ -47,14 +46,20 @@ hr{
     display: flex;
     flex-direction: column;
 }
-.tabimgcontainer {
+.tabcontainer{
+    display: flex;
     width: 100%;
+    position: relative;
+    
+}
+.tabimgcontainer {
+    width: 50%;
     height: auto;
     position:relative;
     margin-bottom: 3rem;
 }
 .tab-img{
-    width:100%;
+    width:90%;;
     position: relative;
     height: auto;
     z-index: 10;
@@ -66,8 +71,8 @@ hr{
     position: absolute;
     bottom: -10%;
     left: 50%;
-    z-index: 1;
-    overflow: hidden;
+    z-index: -1;
+  
     border-bottom-right-radius: 50%;
 
 }
@@ -76,16 +81,13 @@ hr{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    display: none!important;
-    
+    display: none; 
 }
-.tabimg{
-    display: none;
-}
+
 .tabcontent h3{
     font-size: 1.6rem;
 }
-.tab-ontent h3, .tabcontent p{
+.tab-content h3, .tabcontent p{
     text-align: center;
     padding: 1rem 0;
 }
@@ -103,9 +105,7 @@ hr{
     color: white;;
     width: 35%;
 }
-.tab-content.activate{
-    display: block!important;
-}
+
 .tablinks.activated::after{
     content : "";
     position: absolute;

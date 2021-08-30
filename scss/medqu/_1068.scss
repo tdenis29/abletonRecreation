@@ -93,28 +93,32 @@
         align-items: center;
         justify-content: center;
     }
-    .tab-img{
-        width: auto;
+    .tabimg{
+        width: 100%;
     }
     .features-shape-div{
-        height: 18.233rem;
-        width: 55.625rem;
-        border-bottom-right-radius: 15%;
+        height: 17.233rem;
+        width: 26.625rem;
+        border-bottom-right-radius: 50%; 
         padding-bottom: 2rem;
+        overflow-x: hidden;
     }
     .tabcontent{
         display: flex;
         flex-direction: column;
         justify-content: center;
         margin-left: 5rem;
+        align-items: baseline;;
+        width: 50%!important;
         
     }
     .tabcontent p, .tabcontent h3{
         text-align: left;
     }
     .tabimgcontainer{
-        width: 50%;
+        width: 50%!important;
     }
+   
     //downloads
     .downloads-text p{
         width: 55%;
@@ -170,7 +174,6 @@
     margin: 1rem 0;
     border-radius: 5px;
     font-size: 16px;
-   
     color: white;;
     width: 35%;
     }
