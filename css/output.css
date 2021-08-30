@@ -530,6 +530,14 @@ hr {
   box-shadow: 5px 5px 15px 5px lightgray;
 }
 
+svg.flippy {
+  transform: rotate(180deg);
+}
+
+.flippy path {
+  stroke: #fa5757;
+}
+
 .cta-section {
   background-color: #5368df;
   background-size: cover;

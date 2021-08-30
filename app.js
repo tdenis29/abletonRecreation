@@ -35,3 +35,25 @@ function openTab(evt, tabNum) {
   evt.currentTarget.className += " activated";
 }
 document.getElementById("tab1link").click();
+
+//invert cg arrow details open
+let summarys = document.getElementsByClassName('accordian-title')
+let summaryArr = Array.from(summarys);
+summaryArr.forEach(summary => {
+  summary.addEventListener('click', (e) => {
+    if(e.target.id === "details1"){
+      document.getElementById('detail1arrow').classList.toggle('flippy');
+    } 
+    if(e.target.id === "details2"){
+      document.getElementById('detail2arrow').classList.toggle('flippy');
+    } 
+    if(e.target.id === "details3"){
+      document.getElementById('detail3arrow').classList.toggle('flippy');
+    } 
+    if(e.target.id === "details4"){
+      document.getElementById('detail4arrow').classList.toggle('flippy');
+    } 
+    
+
+  })
+});

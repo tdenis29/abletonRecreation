@@ -44,3 +44,9 @@
     font-size: 16px;
     box-shadow: 5px 5px 15px 5px lightgray;
 }
+svg.flippy{
+    transform: rotate(180deg);
+}
+.flippy path{
+    stroke: $softred;;
+}
