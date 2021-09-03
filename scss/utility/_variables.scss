@@ -1,4 +1,44 @@
+//GLOBAL CONFIG
+
+//Color Usage
 $softblue: hsl(231, 69%, 60%);
 $softred:  hsl(0, 94%, 66%);
 $greyblue: hsl(229, 8%, 60%);
 $darkblue: hsl(229, 31%, 21%);
+$white: rgb(243, 241, 241);
+$black: #0b0b0b;
+
+// Color primary/secondary/ accent for dynamically generated themes
+$color-primary: $softblue;
+$color-secondary: $softred;
+$color-triple: $darkblue;
+//UI COLORS
+
+$ui-colors: (
+    default: $softblue,
+    succes: $darkblue,
+    accent: $softred,
+
+);
+
+//Base Line 
+
+$base__font-size: 18px;
+$base__line-height: 26px;
+
+//Calculate ems from pixels
+
+@function em($target, $context: $base__font-size){
+    @return ($target / $context ) * 1em;
+}
+
+//Mixins
+//here the theme and color variables represent the key value pairs in the Ui Colors map
+//this mixin says: "For each theme and color in the ui colors map
+//create this class selector for each key then pass its associated value as the bacground color"
+@mixin bg-colors($map){
+@each $theme, $color in $map{
+    &--#{$theme} {
+        background-color: $color;
+    }
+}}

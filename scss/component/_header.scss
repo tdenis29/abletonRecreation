@@ -13,8 +13,8 @@ header{
     width: 10%;
     justify-self: end;
     z-index: 11;
-    font-size: 1.75rem;
-    color: white;
+    font-size: em(20px);
+    color: $white;
 }}}
 .menu-container button{
     background: none;
@@ -26,10 +26,10 @@ body > header > div.menu-container{
     z-index: 11;
 }
 .modalactive{
-    fill: #fff;
+    fill:$white;
 }
 .hamburger-inner.modalactive{
-    color: #fff;
+    color:$white;
     
 }
 //modal menu
@@ -43,7 +43,7 @@ body > header > div.menu-container{
     text-align: center;
 }
 .menu-nav li {
-    color: #fff;
+    color: $white;
     padding: 1rem 0;
     width: 80%;
     text-transform: uppercase;
@@ -51,15 +51,15 @@ body > header > div.menu-container{
 }
 nav > ul > hr {
     width: 80%;
-    color: lightgray;
+    color: $greyblue;
     margin: 0 auto;
     opacity: .2;
 }
 .menulogin{
     font-size: 1.125rem;
-    color: white;
+    color: $white;
     width: 80%;
-    border: solid 3px white;
+    border: solid 3px $white;
     background: none;
     padding: .75rem 1.5rem;
     text-transform: uppercase;;

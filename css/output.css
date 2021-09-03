@@ -9,8 +9,9 @@ body {
   width: 100%;
   height: 100%;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 1.7777777778em;
   font-size: 18px;
+  line-height: 1.4444444444;
   max-width: 100%;
   overflow-x: hidden !important;
 }
@@ -123,8 +124,8 @@ header .logo-container .menu-container {
   width: 10%;
   justify-self: end;
   z-index: 11;
-  font-size: 1.75rem;
-  color: white;
+  font-size: 1.1111111111em;
+  color: #f3f1f1;
 }
 
 .menu-container button {
@@ -138,11 +139,11 @@ body > header > div.menu-container {
 }
 
 .modalactive {
-  fill: #fff;
+  fill: #f3f1f1;
 }
 
 .hamburger-inner.modalactive {
-  color: #fff;
+  color: #f3f1f1;
 }
 
 .menu-nav-container {
@@ -156,7 +157,7 @@ body > header > div.menu-container {
 }
 
 .menu-nav li {
-  color: #fff;
+  color: #f3f1f1;
   padding: 1rem 0;
   width: 80%;
   text-transform: uppercase;
@@ -165,16 +166,16 @@ body > header > div.menu-container {
 
 nav > ul > hr {
   width: 80%;
-  color: lightgray;
+  color: #9194a1;
   margin: 0 auto;
   opacity: 0.2;
 }
 
 .menulogin {
   font-size: 1.125rem;
-  color: white;
+  color: #f3f1f1;
   width: 80%;
-  border: solid 3px white;
+  border: solid 3px #f3f1f1;
   background: none;
   padding: 0.75rem 1.5rem;
   text-transform: uppercase;
@@ -250,14 +251,14 @@ nav > ul > hr {
   text-align: center;
   width: 100%;
   margin: 0 auto;
-  font-size: 2rem;
+  font-size: 2em;
   color: #252b46;
 }
 
 .landing-text-container {
   width: 100%;
   text-align: center;
-  padding: 1rem;
+  padding: 1em;
   line-height: 1.5;
 }
 .landing-text-container p {
@@ -282,16 +283,25 @@ nav > ul > hr {
   margin: 0 0.5rem;
   border-radius: 5px;
   font-size: 16px;
-  box-shadow: 5px 5px 15px 5px lightgray;
-  color: white;
+  box-shadow: 5px 5px 15px 5px #9194a1;
+  color: #f3f1f1;
+}
+.landing-button-container .landing-cta-left--default {
+  background-color: #5368df;
+}
+.landing-button-container .landing-cta-left--succes {
+  background-color: #252b46;
+}
+.landing-button-container .landing-cta-left--accent {
+  background-color: #fa5757;
 }
 
 .landing-cta-right {
   width: 35%;
   border: none;
   cursor: pointer;
-  background-color: white;
-  border: solid 3px white;
+  background-color: #f3f1f1;
+  border: solid 3px #f3f1f1;
   padding: 1rem 0.5rem;
   text-align: center;
   text-decoration: none;
@@ -299,7 +309,7 @@ nav > ul > hr {
   margin: 0 0.5rem;
   border-radius: 5px;
   font-size: 16px;
-  box-shadow: 5px 5px 15px 5px lightgray;
+  box-shadow: 5px 5px 15px 5px #9194a1;
   color: #9194a1;
 }
 
