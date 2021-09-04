@@ -42,3 +42,31 @@ $base__line-height: 26px;
         background-color: $color;
     }
 }}
+//variable for relative path
+$path--rel: "assets/images";
+
+@mixin img-replace($img,$width,$h,$disp: block){
+    background-image: url($path--rel)/#{$img};
+    background-repeat: no-repeat;
+    width: $width;
+    height: $h;
+    display: $disp;
+}
+
+//call the palette with modifiers 
+// @function palette($palette, $shade: 'base'){
+// @return map-get(map-get($palettes, $palette), $shade)
+
+// }
+// $palettes: (
+//     $greyblue: (
+//         light: lighten($greyblue, 10%),
+//         base: $greyblue,
+//         dark: darken($greyblue, 20%)
+//     ),
+//     $black: (
+//         light: lighten($black, 10%)
+//         base: $black
+//         dark: darken($black, 5%)
+//     ),
+// )

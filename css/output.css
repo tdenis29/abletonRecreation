@@ -314,7 +314,7 @@ nav > ul > hr {
 }
 
 .landing-cta-left:hover {
-  background-color: white;
+  background-color: #f3f1f1;
   border: solid 3px #5368df;
   color: #5368df;
 }
