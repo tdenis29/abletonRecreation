@@ -26,7 +26,7 @@
     }
     .desktopmenulogin{
         width: 100%;
-        color: white!important;
+        color: $white!important;
         border: solid 3px $softred;
         background: $softred;
         text-transform: uppercase;
@@ -34,7 +34,7 @@
         border-radius: 5px;;
     }
     .desktopmenulogin:hover{
-        background-color: white;
+        background-color:$white;
         color: $softred!important;
     }
 
@@ -179,7 +179,7 @@
     margin: 1rem 0;
     border-radius: 5px;
     font-size: 16px;
-    color: white;;
+    color: $white;
     width: 35%;
     }
     //footer

@@ -16,7 +16,6 @@ hamburger.addEventListener('click', (e) => {
     } else{
         hamburger.classList.remove('is-active');
         hamburger.classList.remove("modalactive");
-    
     }
 });
 //tabs
@@ -43,22 +42,23 @@ document.getElementById("tab1link").click();
 //invert cg arrow details open
 let summarys = document.getElementsByClassName('accordian-title')
 let summaryArr = Array.from(summarys);
+console.log(summaryArr)
 summaryArr.forEach(summary => {
   summary.addEventListener('click', (e) => {
-    if(e.target.id === "details1"){
+    if(e.target.id === "details1" || e.target.id === "detail1arrow"){
       document.getElementById('detail1arrow').classList.toggle('flippy');
     } 
-    if(e.target.id === "details2"){
+    if(e.target.id === "details2" || e.target.id === "detail2arrow"){
       document.getElementById('detail2arrow').classList.toggle('flippy');
     } 
-    if(e.target.id === "details3"){
+    if((e.target.id === "details3" || e.target.id === "detail3arrow")){
       document.getElementById('detail3arrow').classList.toggle('flippy');
     } 
-    if(e.target.id === "details4"){
+    if((e.target.id === "details4" || e.target.id === "detail4arrow")){
       document.getElementById('detail4arrow').classList.toggle('flippy');
     } 
     
 
   })
 });
-//turn hamburger into x 
+ 

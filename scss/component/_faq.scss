@@ -37,7 +37,7 @@
 .faq-button-container button{
     border:solid 2px transparent;
     background-color:$softblue;
-    color: white;
+    color: $white;
     padding: 1rem 1.5rem;
     text-align: center;
     text-decoration: none;
@@ -48,7 +48,7 @@
     box-shadow: 5px 5px 15px 5px lightgray;
 }
 .faq-button-container button:hover{
-    background-color: white;
+    background-color: $white;
     color: $softblue;
     border: solid 2px $softblue;
 }
